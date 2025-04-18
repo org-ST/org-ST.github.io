@@ -14,11 +14,13 @@
             font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;  /* Center content horizontally */
+            justify-content: center;  /* Center content vertically */
         }
 
         .main-container {
+            font-size: 1.25rem;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 30px;
@@ -35,7 +37,6 @@
         }
 
         p {
-            font-size: 1.25rem;
             color: #f8f9fa;
             margin-bottom: 20px;
         }
@@ -48,20 +49,46 @@
         .btn-custom:hover {
             background-color: #0056b3;
         }
+
+        /* Footnote Container */
+        .footnote-container {
+            font-size: 0.8rem; /* smaller than the regular 1.25rem */
+            color: #cccccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #333333;
+            border-radius: 5px;
+            max-width: 600px;  /* Same width as the main container */
+            margin-left: auto;
+            margin-right: auto;  /* Center the footnote section */
+        }
+
+        .footnote-container p {
+            margin-bottom: 10px;
+        }
+
+        .footnote-container sup {
+            font-size: 0.8rem;  /* smaller superscript size */
+        }
     </style>
 </head>
 <body>
 
 <div class="container main-container">
-    <h1>Welcome to orgST©</h1>
-    <p>orgST© has all project Source Code publically available<sup>2</sup></p>
+    <h1>Welcome to orgST<sup>©</sup></h1>
+    <p>orgST<sup>©</sup> has all project Source Code publicly available<sup>2</sup></p>
     <p>It is a project that will eventually be a Python application to run apps made specifically for it.</p>
     <p>Eventually, orgST will have its own dedicated operating system!</p>
-    <!-- Footnotes -->
-    <div class="mt-5 pt-4 border-top text-center small">
-        <p id="footnote1"><strong>[1]</strong> orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/</p>
-        <p id="footnote1"><strong>[2]</strong>"Source Code publically available" Does not = Open Source by definition. It means we provide the Full Code Publically</p>
-    </div>
+    <p>
+        <a href="https://github.com/MakiDevelops/orgST" class="btn btn-custom btn-lg">View the Source Code</a>
+    </p>
+</div>
+
+<!-- Separate Footnotes Section -->
+<div class="footnote-container">
+    <p id="footnote1"><strong>[1]</strong> orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">here</a>.</p>
+    <p id="footnote2"><strong>[2]</strong> "Source Code publicly available" Does not mean Open Source by definition. It means we provide the Full Code but under restrictions.</p>
 </div>
 
 <!-- Bootstrap JS and dependencies -->
