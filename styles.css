@@ -1,0 +1,87 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
+    justify-content: center;  /* Center content vertically */
+}
+.card {
+    border-radius: 10px;
+    background-color: #333333;
+    overflow: hidden;
+}
+.row {
+    gap: 1rem;
+}
+.main-container {
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Footnote Container */
+.footnote-container {
+    font-size: 0.8rem; /* smaller than the regular 1.25rem */
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333333;
+    border-radius: 5px;
+    max-width: 900px;  /* Same width as the main container */
+    margin-left: auto;
+    margin-right: auto;  /* Center the footnote section */
+}
+
+.footnote-container p {
+    margin-bottom: 10px;
+}
+
+.footnote-container sup {
+    font-size: 0.8rem;  /* smaller superscript size */
+}
+.rounded-table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 0.85rem; /* Makes the text slightly smaller */
+    width: 100%;
+    max-width: 500px; /* Or however small you want it */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+.rounded-table th,
+.rounded-table td {
+    vertical-align: middle;
+    padding: 0.5rem; /* Tighter padding = smaller look */
+}
