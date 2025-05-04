@@ -1,6 +1,15 @@
+:root {
+    --pr-colour: #000000; /* Primary Colour - BGs */
+    --sc-colour: #ffffff; /* Secondary Colour - Text */
+    --tt-colour: #333333; /* Tertiary Colour - Other Elements */
+
+    --btn-colour: #007bff; /* Normal Button Colour */
+    --btn-hv-colour: #0056b3; /* Button Colour On Hover */
+}
+
 body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--pr-colour);
+    color: var(--sc-colour);
     padding-top: 50px;
     font-family: Arial, sans-serif;
     height: 100vh;
@@ -11,7 +20,7 @@ body {
 }
 .card {
     border-radius: 10px;
-    background-color: #333333;
+    background-color: var(--tt-colour);
     overflow: hidden;
 }
 .row {
@@ -30,33 +39,33 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: #ffffff;
+    color: var(--sc-colour);
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 p {
-    color: #f8f9fa;
+    color: var(--sc-colour);
     margin-bottom: 20px;
 }
 
 .btn-custom {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--btn-colour);
+    color: var(--sc-colour);
 }
 
 .btn-custom:hover {
-    background-color: #0056b3;
+    background-color: var(--btn-hv-colour);
 }
 
 /* Footnote Container */
 .footnote-container {
     font-size: 0.8rem; /* smaller than the regular 1.25rem */
-    color: #cccccc;
+    color: var(--sc-colour);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background-color: #333333;
+    background-color: var(--tt-colour);
     border-radius: 5px;
     max-width: 900px;  /* Same width as the main container */
     margin-left: auto;
