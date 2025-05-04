@@ -82,6 +82,21 @@
         .footnote-container sup {
             font-size: 0.8rem;  /* smaller superscript size */
         }
+        .rounded-table {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 0.85rem; /* Makes the text slightly smaller */
+            width: 100%;
+            max-width: 500px; /* Or however small you want it */
+            margin: 0 auto; /* Center it horizontally */
+        }
+
+        .rounded-table th,
+        .rounded-table td {
+            vertical-align: middle;
+            padding: 0.5rem; /* Tighter padding = smaller look */
+        }
     </style>
 </head>
 <body>
@@ -114,8 +129,8 @@
     <p>
         <a href="https://github.com/MakiDevelops/homeroom" class="btn btn-custom btn-lg">View the Source Code</a>
     </p>
-    <div class="table-responsive">
-        <table class="table table-dark table-bordered">
+    <div class="table-responsive" style="max-width: 550px; margin: 0 auto;">
+        <table class="table table-dark table-bordered table-sm rounded-table">
           <thead>
             <tr>
               <th>Package</th>
