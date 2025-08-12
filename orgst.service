@@ -1,0 +1,11 @@
+[Unit]
+Description=orgST Web Server
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=/home/william/orgst
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+User=root
+[Install]
+WantedBy=multi-user.target
