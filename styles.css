@@ -1,96 +1,46 @@
-:root {
-    --pr-colour: #000000; /* Primary Colour - BGs */
-    --sc-colour: #ffffff; /* Secondary Colour - Text */
-    --tt-colour: #333333; /* Tertiary Colour - Other Elements */
-
-    --btn-colour: #007bff; /* Normal Button Colour */
-    --btn-hv-colour: #0056b3; /* Button Colour On Hover */
+.center-container > * + * {
+    margin-top: 1rem;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: var(--pr-colour);
-    color: var(--sc-colour);
-    padding-top: 50px;
-    font-family: Arial, sans-serif;
-    height: 100vh;
+.center-container {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center content horizontally */
-    justify-content: center;  /* Center content vertically */
-}
-.card {
-    border-radius: 10px;
-    background-color: var(--tt-colour);
-    overflow: hidden;
-}
-.row {
-    gap: 1rem;
-}
-.main-container {
-    font-size: 1.25rem;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 600px;
-    margin: 0 auto;
 }
-
-h1 {
-    font-size: 3rem;
-    color: var(--sc-colour);
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+md-elevated-button.small {
+    --md-elevated-button-min-height: 24px;  /* shrink height */
+    --md-elevated-button-padding: 2px 8px;  /* less padding top/bottom */
+    font-size: 0.75rem;                      /* smaller text */
+    height: 24px;                           /* force height */
+    line-height: 24px;                      /* align text vertically */
+    min-width: 64px;                        /* optional: shrink width */
 }
-
-p {
-    color: var(--sc-colour);
-    margin-bottom: 20px;
-}
-
-.btn-custom {
-    background-color: var(--btn-colour);
-    color: var(--sc-colour);
-}
-
-.btn-custom:hover {
-    background-color: var(--btn-hv-colour);
-}
-
-/* Footnote Container */
-.footnote-container {
-    font-size: 0.8rem; /* smaller than the regular 1.25rem */
-    color: var(--sc-colour);
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    background-color: var(--tt-colour);
-    border-radius: 5px;
-    max-width: 900px;  /* Same width as the main container */
-    margin-left: auto;
-    margin-right: auto;  /* Center the footnote section */
-}
-
-.footnote-container p {
-    margin-bottom: 10px;
-}
-
-.footnote-container sup {
-    font-size: 0.8rem;  /* smaller superscript size */
-}
-.rounded-table {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    font-size: 0.85rem; /* Makes the text slightly smaller */
-    width: 100%;
-    max-width: 500px; /* Or however small you want it */
-    margin: 0 auto; /* Center it horizontally */
-}
-
-.rounded-table th,
-.rounded-table td {
+.icon-inline {
+    display: inline-block;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
     vertical-align: middle;
-    padding: 0.5rem; /* Tighter padding = smaller look */
+    margin-bottom: 0.1em;
+}
+#projects {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-wrap: break-word;
+}
+
+.navbar {
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
 }
